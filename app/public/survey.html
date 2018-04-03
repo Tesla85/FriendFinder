@@ -225,6 +225,14 @@
 
 <script type="text/javascript">
 
+    var config = {
+        ".custom-select": {}
+    }
+
+    for(var selector in config) {
+        $(selector).chose(config[selector]);
+    }
+
     $(".submit").on("click", function (event) {
         event.preventDefault();
 
@@ -235,7 +243,16 @@
                     complete = false;
                 }
             });
+            
+            $()
+
+
+
+
         }
+
+
+
     });
 
 </script>
